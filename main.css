@@ -1,0 +1,127 @@
+* {
+    box-sizing:
+        border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.banner {
+    min-height: 100vh;
+    background: linear-gradient(rgba(77, 6, 6, 0.5), rgba(0, 0, 0, 0.5)), url('backgroud.jpg')center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+
+.card-img {
+    background: url('arti.webp') center/cover no-repeat;
+}
+
+.banner h2 {
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    background: #fff;
+    height: 370px;
+}
+
+.card-content h3 {
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.form-row {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+}
+
+form select,
+form input {
+    display: block;
+    width: 100%;
+    margin: 10px 14px;
+    padding: 3px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border:none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-weight: 300;
+}
+
+form input[type=text],
+form input[type=numner],
+form input::placeholder,
+select {
+    color: #9a9a9a;
+}
+
+#btn {
+    color: #fff;
+    background: #f2745f;
+    padding: 10px 0;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px auto;
+    cursor: pointer
+}
+
+form input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+@media(max-width:992px) {
+    .card-container {
+        grid-template-columns: 100%;
+    }
+
+    .card-img {
+        height: 320px;
+    }
+}
+
+.signin {
+    color: #0e0c0c;
+    text-align: center;
+    font-size: medium;
+}
+
+a {
+    color: dodgerblue;
+}
+
+hr {
+    border: 1px solid #0a0a0a;
+    margin-bottom: 25px;
+}
+
+#btn-cancel {
+    color: #fff;
+    background: #f2745f;
+    padding: 10px 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 49%;
+    margin: 5px auto;
+    
+}
