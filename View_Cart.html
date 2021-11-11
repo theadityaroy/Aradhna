@@ -2,129 +2,60 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ARADHYA : SIGN UP</title>
-  <link rel="stylesheet" href="main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARADHYA : SIGN UP</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
 <body>
 
-  <!--This Is The Upr Navigation Bar-->
-  <nav class="navbar navbar-light fixed-top" style="background-color:  #f2745f;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">ARADHYA - SPARSH KHANNA & ADITYA ROY</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <!--This Is The Upr Navigation Bar-->
+    <nav class="navbar navbar-light fixed-top" style="background-color:  #f2745f;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ARADHYA - SPARSH KHANNA & ADITYA ROY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            <li class="nav-item">
-                <a class="nav-link disabled" href="login.html">LOGIN</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link " href="buy_Item.html">BUY ITEM</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link disabled" href="View_Cart.html">VIEW CART</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link " href="Contact_Us.html">CONTACT US</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link " href="index.html">LOGOUT</a>
-              </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" >WELCOME, SPARSH & ADITYA</a>
+                    </li>
 
-        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link " href="buy_Item.html">BUY ITEM</a>
+                    </li>
 
-      </div>
-    </div>
-  </nav>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="View_Cart.html">VIEW CART</a>
+                    </li>
 
-  <!--Banner Card-->
-  <section class="banner">
-    <div class="card-container">
+                    <li class="nav-item">
+                        <a class="nav-link " href="Contact_Us.html">CONTACT US</a>
+                    </li>
 
-      <div class="card-img">
-        <!--image here-->
-      </div>
+                    <li class="nav-item">
+                        <a class="nav-link " href="login.html">LOGOUT</a>
+                    </li>
 
-      <div class="card-content">
-        <h3>SIGN UP</h3>
-        <form>
-          <div class="container">
-            <div class="form-row">
-              <input type="text" placeholder="FULL NAME " required id="name">
-              <input type="text" placeholder="USERNAME" required id="user">
+                </ul>
+
             </div>
+        </div>
+    </nav>
 
 
-            <div class="form-row">
-              <input type="password" name="password1" placeholder="ENTER PASSWORD" id="myInput" required>
-              <input type="password" name="password2" placeholder="CONFIRM PASSWORD" id="myInput2" required>
-            </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 
-            <div class="form-row">
-              <input type="email" placeholder="EMAIL" required id="email">
-            </div>
-
-            <div class="form-row">
-              <button type="button" class="btn btn-primary" id="btn">SIGN UP</button>
-            </div>
-
-            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-              <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header" style="background-color:  #f2745f;">
-                  <strong class="me-auto" style="color: #ffffff;">RESERVEQUE</strong>
-                  <small style="color: #ffffff;">Just Now</small>
-                  <button type="button" class="btn-close" id="close"></button>
-                </div>
-
-                <div class="toast-body" style="color: #000000;">
-                  <b>Signup Successful</b>
-                </div>
-              </div>
-            </div>
-
-            <div class="container signin">
-              <p>By creating an account you agree to our <a href="terms.html">Terms & Privacy</a>.</p>
-            </div>
-
-            <div class="container signin">
-              <p>Already have an account? <a href="#">Login</a>.</p>
-            </div>
-
-          </div>
-      </div>
-      </form>
-    </div>
-  </section>
-
-  <!--Script Used For Masking the Password-->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myInput");
-      if (x.type === "password") {
-        x.type = "text";
-      } else {
-        x.type = "password";
-      }
-    }
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-    crossorigin="anonymous"></script>
-
-  <script src="index.js"></script>
 </body>
 
 </html>
